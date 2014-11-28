@@ -1,0 +1,958 @@
+<package name="gltools.gl"/>
+<interface visibility="public" name="GL2" extends="GL1">
+	<field visibility="public" static="true" final="true" type="int" name="GL_PIXEL_PACK_BUFFER_BINDING" value="0x088ED"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_STENCIL_BACK_FAIL_ATI" value="0x08801"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_VERTEX_PROGRAM_POINT_SIZE" value="0x08642"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_ACTIVE_ATTRIBUTE_MAX_LENGTH" value="0x08B8A"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_DELETE_STATUS" value="0x08B80"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_ACTIVE_UNIFORMS" value="0x08B86"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_VALIDATE_STATUS" value="0x08B83"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_CURRENT_RASTER_SECONDARY_COLOR" value="0x0845F"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_CURRENT_VERTEX_ATTRIB" value="0x08626"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_MAX_DRAW_BUFFERS" value="0x08824"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_POINT_SPRITE_COORD_ORIGIN" value="0x08CA0"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_VERTEX_SHADER" value="0x08B31"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_INFO_LOG_LENGTH" value="0x08B84"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_FLOAT_MAT3x4" value="0x08B68"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_SRGB8_ALPHA8" value="0x08C43"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_FLOAT_MAT3x2" value="0x08B67"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_BOOL_VEC4" value="0x08B59"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_BOOL_VEC3" value="0x08B58"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_BOOL_VEC2" value="0x08B57"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_FRAGMENT_SHADER_DERIVATIVE_HINT" value="0x08B8B"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_POINT_SPRITE" value="0x08861"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_STENCIL_BACK_WRITEMASK" value="0x08CA5"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_COMPRESSED_SLUMINANCE_ALPHA" value="0x08C4B"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_SLUMINANCE8_ALPHA8" value="0x08C45"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_SHADER_TYPE" value="0x08B4F"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_FRAGMENT_SHADER" value="0x08B30"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_FLOAT_MAT4" value="0x08B5C"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_FLOAT_MAT3" value="0x08B5B"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_FLOAT_MAT2" value="0x08B5A"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_BLEND_EQUATION_ALPHA" value="0x0883D"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_UPPER_LEFT" value="0x08CA2"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_COMPRESSED_SLUMINANCE" value="0x08C4A"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_ACTIVE_ATTRIBUTES" value="0x08B89"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_MAX_TEXTURE_IMAGE_UNITS" value="0x08872"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_MAX_VERTEX_ATTRIBS" value="0x08869"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_BLEND_EQUATION_RGB" value="0x08009"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_VERTEX_PROGRAM_TWO_SIDE" value="0x08643"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_STENCIL_BACK_PASS_DEPTH_FAIL_ATI" value="0x08802"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_SAMPLER_1D_SHADOW" value="0x08B61"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_FLOAT_MAT4x3" value="0x08B6A"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_MAX_VERTEX_UNIFORM_COMPONENTS" value="0x08B4A"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_VERTEX_ATTRIB_ARRAY_STRIDE" value="0x08624"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_FLOAT_MAT4x2" value="0x08B69"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_SLUMINANCE" value="0x08C46"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_MAX_TEXTURE_COORDS" value="0x08871"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_STENCIL_BACK_FUNC_ATI" value="0x08800"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_PIXEL_UNPACK_BUFFER" value="0x088EC"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_SRGB" value="0x08C40"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_CURRENT_PROGRAM" value="0x08B8D"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_INT_VEC4" value="0x08B55"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_INT_VEC2" value="0x08B53"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_INT_VEC3" value="0x08B54"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_LOWER_LEFT" value="0x08CA1"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_SRGB_ALPHA" value="0x08C42"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_DRAW_BUFFER9" value="0x0882E"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_SRGB8" value="0x08C41"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_DRAW_BUFFER5" value="0x0882A"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS" value="0x08B4C"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_DRAW_BUFFER6" value="0x0882B"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_DRAW_BUFFER7" value="0x0882C"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_DRAW_BUFFER8" value="0x0882D"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_DRAW_BUFFER1" value="0x08826"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_DRAW_BUFFER2" value="0x08827"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_DRAW_BUFFER3" value="0x08828"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_STENCIL_BACK_VALUE_MASK" value="0x08CA4"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_DRAW_BUFFER4" value="0x08829"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_DRAW_BUFFER0" value="0x08825"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_COMPRESSED_SRGB" value="0x08C48"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_SAMPLER_2D_SHADOW" value="0x08B62"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_SHADING_LANGUAGE_VERSION" value="0x08B8C"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_ACTIVE_UNIFORM_MAX_LENGTH" value="0x08B87"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_SLUMINANCE8" value="0x08C47"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_SAMPLER_3D" value="0x08B5F"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_COORD_REPLACE" value="0x08862"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_MAX_VARYING_FLOATS" value="0x08B4B"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_LINK_STATUS" value="0x08B82"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_ATTACHED_SHADERS" value="0x08B85"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_VERTEX_ATTRIB_ARRAY_SIZE" value="0x08623"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_COMPILE_STATUS" value="0x08B81"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_SLUMINANCE_ALPHA" value="0x08C44"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_COMPRESSED_SRGB_ALPHA" value="0x08C49"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS" value="0x08B4D"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_DRAW_BUFFER14" value="0x08833"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_SHADER_SOURCE_LENGTH" value="0x08B88"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_VERTEX_ATTRIB_ARRAY_ENABLED" value="0x08622"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_DRAW_BUFFER15" value="0x08834"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_SAMPLER_2D" value="0x08B5E"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_DRAW_BUFFER10" value="0x0882F"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_DRAW_BUFFER11" value="0x08830"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_DRAW_BUFFER12" value="0x08831"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_DRAW_BUFFER13" value="0x08832"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_PIXEL_PACK_BUFFER" value="0x088EB"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_STENCIL_BACK_REF" value="0x08CA3"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_MAX_FRAGMENT_UNIFORM_COMPONENTS" value="0x08B49"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_BOOL" value="0x08B56"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_SAMPLER_CUBE" value="0x08B60"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_VERTEX_ATTRIB_ARRAY_POINTER" value="0x08645"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_PIXEL_UNPACK_BUFFER_BINDING" value="0x088EF"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_STENCIL_BACK_PASS_DEPTH_PASS_ATI" value="0x08803"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_VERTEX_ATTRIB_ARRAY_NORMALIZED" value="0x0886A"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_FLOAT_MAT2x3" value="0x08B65"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_FLOAT_MAT2x4" value="0x08B66"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_SAMPLER_1D" value="0x08B5D"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_VERTEX_ATTRIB_ARRAY_TYPE" value="0x08625"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_FLOAT_VEC2" value="0x08B50"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_FLOAT_VEC4" value="0x08B52"/>
+	<field visibility="public" static="true" final="true" type="int" name="GL_FLOAT_VEC3" value="0x08B51"/>
+	<method visibility="public" static="false" final="false" name="glAttachShader">
+		<argument type="int" name="program"/>
+		<argument type="int" name="shader"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glBindAttribLocation">
+		<argument type="int" name="program"/>
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ByteBuffer" name="name"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glBindAttribLocation">
+		<argument type="int" name="program"/>
+		<argument type="int" name="index"/>
+		<argument type="java.lang.CharSequence" name="name"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glBlendEquationSeparate">
+		<argument type="int" name="modeRGB"/>
+		<argument type="int" name="modeAlpha"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glCompileShader">
+		<argument type="int" name="shader"/>
+	</method>
+	<method visibility="public" static="false" final="false" returnType="int" name="glCreateProgram">
+	</method>
+	<method visibility="public" static="false" final="false" returnType="int" name="glCreateShader">
+		<argument type="int" name="type"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glDeleteProgram">
+		<argument type="int" name="program"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glDeleteShader">
+		<argument type="int" name="shader"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glDetachShader">
+		<argument type="int" name="program"/>
+		<argument type="int" name="shader"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glDisableVertexAttribArray">
+		<argument type="int" name="index"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glDrawBuffers">
+		<argument type="int" name="buf"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glDrawBuffers">
+		<argument type="java.nio.IntBuffer" name="bufs"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glDrawBuffers">
+		<argument type="int" name="n"/>
+		<argument type="java.nio.ByteBuffer" name="bufs"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glEnableVertexAttribArray">
+		<argument type="int" name="index"/>
+	</method>
+	<method visibility="public" static="false" final="false" returnType="java.lang.String" name="glGetActiveAttrib">
+		<argument type="int" name="program"/>
+		<argument type="int" name="index"/>
+		<argument type="java.nio.IntBuffer" name="size"/>
+		<argument type="java.nio.IntBuffer" name="type"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glGetActiveAttrib">
+		<argument type="int" name="program"/>
+		<argument type="int" name="index"/>
+		<argument type="java.nio.IntBuffer" name="length"/>
+		<argument type="java.nio.IntBuffer" name="size"/>
+		<argument type="java.nio.IntBuffer" name="type"/>
+		<argument type="java.nio.ByteBuffer" name="name"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glGetActiveAttrib">
+		<argument type="int" name="program"/>
+		<argument type="int" name="index"/>
+		<argument type="int" name="maxLength"/>
+		<argument type="java.nio.ByteBuffer" name="length"/>
+		<argument type="java.nio.ByteBuffer" name="size"/>
+		<argument type="java.nio.ByteBuffer" name="type"/>
+		<argument type="java.nio.ByteBuffer" name="name"/>
+	</method>
+	<method visibility="public" static="false" final="false" returnType="java.lang.String" name="glGetActiveAttrib">
+		<argument type="int" name="program"/>
+		<argument type="int" name="index"/>
+		<argument type="int" name="maxLength"/>
+		<argument type="java.nio.IntBuffer" name="size"/>
+		<argument type="java.nio.IntBuffer" name="type"/>
+	</method>
+	<method visibility="public" static="false" final="false" returnType="java.lang.String" name="glGetActiveUniform">
+		<argument type="int" name="program"/>
+		<argument type="int" name="index"/>
+		<argument type="java.nio.IntBuffer" name="size"/>
+		<argument type="java.nio.IntBuffer" name="type"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glGetActiveUniform">
+		<argument type="int" name="program"/>
+		<argument type="int" name="index"/>
+		<argument type="java.nio.IntBuffer" name="length"/>
+		<argument type="java.nio.IntBuffer" name="size"/>
+		<argument type="java.nio.IntBuffer" name="type"/>
+		<argument type="java.nio.ByteBuffer" name="name"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glGetActiveUniform">
+		<argument type="int" name="program"/>
+		<argument type="int" name="index"/>
+		<argument type="int" name="maxLength"/>
+		<argument type="java.nio.ByteBuffer" name="length"/>
+		<argument type="java.nio.ByteBuffer" name="size"/>
+		<argument type="java.nio.ByteBuffer" name="type"/>
+		<argument type="java.nio.ByteBuffer" name="name"/>
+	</method>
+	<method visibility="public" static="false" final="false" returnType="java.lang.String" name="glGetActiveUniform">
+		<argument type="int" name="program"/>
+		<argument type="int" name="index"/>
+		<argument type="int" name="maxLength"/>
+		<argument type="java.nio.IntBuffer" name="size"/>
+		<argument type="java.nio.IntBuffer" name="type"/>
+	</method>
+	<method visibility="public" static="false" final="false" returnType="java.nio.IntBuffer" name="glGetAttachedShaders">
+		<argument type="int" name="program"/>
+	</method>
+	<method visibility="public" static="false" final="false" returnType="java.nio.IntBuffer" name="glGetAttachedShaders">
+		<argument type="int" name="program"/>
+		<argument type="int" name="maxCount"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glGetAttachedShaders">
+		<argument type="int" name="program"/>
+		<argument type="java.nio.IntBuffer" name="count"/>
+		<argument type="java.nio.IntBuffer" name="shaders"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glGetAttachedShaders">
+		<argument type="int" name="program"/>
+		<argument type="int" name="maxCount"/>
+		<argument type="java.nio.ByteBuffer" name="count"/>
+		<argument type="java.nio.ByteBuffer" name="shaders"/>
+	</method>
+	<method visibility="public" static="false" final="false" returnType="int" name="glGetAttribLocation">
+		<argument type="int" name="program"/>
+		<argument type="java.nio.ByteBuffer" name="name"/>
+	</method>
+	<method visibility="public" static="false" final="false" returnType="int" name="glGetAttribLocation">
+		<argument type="int" name="program"/>
+		<argument type="java.lang.CharSequence" name="name"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glGetProgram">
+		<argument type="int" name="program"/>
+		<argument type="int" name="pname"/>
+		<argument type="java.nio.IntBuffer" name="params"/>
+	</method>
+	<method visibility="public" static="false" final="false" returnType="int" name="glGetProgrami">
+		<argument type="int" name="program"/>
+		<argument type="int" name="pname"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glGetProgrami">
+		<argument type="int" name="program"/>
+		<argument type="int" name="pname"/>
+		<argument type="java.nio.ByteBuffer" name="params"/>
+	</method>
+	<method visibility="public" static="false" final="false" returnType="java.lang.String" name="glGetProgramInfoLog">
+		<argument type="int" name="program"/>
+	</method>
+	<method visibility="public" static="false" final="false" returnType="java.lang.String" name="glGetProgramInfoLog">
+		<argument type="int" name="program"/>
+		<argument type="int" name="maxLength"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glGetProgramInfoLog">
+		<argument type="int" name="program"/>
+		<argument type="java.nio.IntBuffer" name="length"/>
+		<argument type="java.nio.ByteBuffer" name="infoLog"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glGetProgramInfoLog">
+		<argument type="int" name="program"/>
+		<argument type="int" name="maxLength"/>
+		<argument type="java.nio.ByteBuffer" name="length"/>
+		<argument type="java.nio.ByteBuffer" name="infoLog"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glGetShader">
+		<argument type="int" name="shader"/>
+		<argument type="int" name="pname"/>
+		<argument type="java.nio.IntBuffer" name="params"/>
+	</method>
+	<method visibility="public" static="false" final="false" returnType="int" name="glGetShaderi">
+		<argument type="int" name="shader"/>
+		<argument type="int" name="pname"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glGetShaderi">
+		<argument type="int" name="shader"/>
+		<argument type="int" name="pname"/>
+		<argument type="java.nio.ByteBuffer" name="params"/>
+	</method>
+	<method visibility="public" static="false" final="false" returnType="java.lang.String" name="glGetShaderInfoLog">
+		<argument type="int" name="shader"/>
+	</method>
+	<method visibility="public" static="false" final="false" returnType="java.lang.String" name="glGetShaderInfoLog">
+		<argument type="int" name="shader"/>
+		<argument type="int" name="maxLength"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glGetShaderInfoLog">
+		<argument type="int" name="shader"/>
+		<argument type="java.nio.IntBuffer" name="length"/>
+		<argument type="java.nio.ByteBuffer" name="infoLog"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glGetShaderInfoLog">
+		<argument type="int" name="shader"/>
+		<argument type="int" name="maxLength"/>
+		<argument type="java.nio.ByteBuffer" name="length"/>
+		<argument type="java.nio.ByteBuffer" name="infoLog"/>
+	</method>
+	<method visibility="public" static="false" final="false" returnType="java.lang.String" name="glGetShaderSource">
+		<argument type="int" name="shader"/>
+	</method>
+	<method visibility="public" static="false" final="false" returnType="java.lang.String" name="glGetShaderSource">
+		<argument type="int" name="shader"/>
+		<argument type="int" name="maxLength"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glGetShaderSource">
+		<argument type="int" name="shader"/>
+		<argument type="java.nio.IntBuffer" name="length"/>
+		<argument type="java.nio.ByteBuffer" name="source"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glGetShaderSource">
+		<argument type="int" name="shader"/>
+		<argument type="int" name="maxLength"/>
+		<argument type="java.nio.ByteBuffer" name="length"/>
+		<argument type="java.nio.ByteBuffer" name="source"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glGetUniform">
+		<argument type="int" name="program"/>
+		<argument type="int" name="location"/>
+		<argument type="java.nio.FloatBuffer" name="params"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glGetUniform">
+		<argument type="int" name="program"/>
+		<argument type="int" name="location"/>
+		<argument type="java.nio.IntBuffer" name="params"/>
+	</method>
+	<method visibility="public" static="false" final="false" returnType="float" name="glGetUniformf">
+		<argument type="int" name="program"/>
+		<argument type="int" name="location"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glGetUniformf">
+		<argument type="int" name="program"/>
+		<argument type="int" name="location"/>
+		<argument type="java.nio.ByteBuffer" name="params"/>
+	</method>
+	<method visibility="public" static="false" final="false" returnType="int" name="glGetUniformi">
+		<argument type="int" name="program"/>
+		<argument type="int" name="location"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glGetUniformi">
+		<argument type="int" name="program"/>
+		<argument type="int" name="location"/>
+		<argument type="java.nio.ByteBuffer" name="params"/>
+	</method>
+	<method visibility="public" static="false" final="false" returnType="int" name="glGetUniformLocation">
+		<argument type="int" name="program"/>
+		<argument type="java.nio.ByteBuffer" name="name"/>
+	</method>
+	<method visibility="public" static="false" final="false" returnType="int" name="glGetUniformLocation">
+		<argument type="int" name="program"/>
+		<argument type="java.lang.CharSequence" name="name"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glGetVertexAttrib">
+		<argument type="int" name="index"/>
+		<argument type="int" name="pname"/>
+		<argument type="java.nio.DoubleBuffer" name="params"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glGetVertexAttrib">
+		<argument type="int" name="index"/>
+		<argument type="int" name="pname"/>
+		<argument type="java.nio.FloatBuffer" name="params"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glGetVertexAttrib">
+		<argument type="int" name="index"/>
+		<argument type="int" name="pname"/>
+		<argument type="java.nio.IntBuffer" name="params"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glGetVertexAttribd">
+		<argument type="int" name="index"/>
+		<argument type="int" name="pname"/>
+		<argument type="java.nio.ByteBuffer" name="params"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glGetVertexAttribf">
+		<argument type="int" name="index"/>
+		<argument type="int" name="pname"/>
+		<argument type="java.nio.ByteBuffer" name="params"/>
+	</method>
+	<method visibility="public" static="false" final="false" returnType="int" name="glGetVertexAttribi">
+		<argument type="int" name="index"/>
+		<argument type="int" name="pname"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glGetVertexAttribi">
+		<argument type="int" name="index"/>
+		<argument type="int" name="pname"/>
+		<argument type="java.nio.ByteBuffer" name="params"/>
+	</method>
+	<method visibility="public" static="false" final="false" returnType="long" name="glGetVertexAttribPointer">
+		<argument type="int" name="index"/>
+		<argument type="int" name="pname"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glGetVertexAttribPointer">
+		<argument type="int" name="index"/>
+		<argument type="int" name="pname"/>
+		<argument type="java.nio.ByteBuffer" name="pointer"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glGetVertexAttribPointer">
+		<argument type="int" name="index"/>
+		<argument type="int" name="pname"/>
+		<argument type="PointerBuffer" name="pointer"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glLinkProgram">
+		<argument type="int" name="program"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glShaderSource">
+		<argument type="int" name="shader"/>
+		<argument type="java.lang.CharSequence" name="string"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glShaderSource">
+		<argument type="int" name="shader"/>
+		<argument type="java.lang.CharSequence[]" name="strings"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glShaderSource">
+		<argument type="int" name="shader"/>
+		<argument type="int" name="count"/>
+		<argument type="java.nio.ByteBuffer" name="strings"/>
+		<argument type="java.nio.ByteBuffer" name="length"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glShaderSource">
+		<argument type="int" name="shader"/>
+		<argument type="PointerBuffer" name="strings"/>
+		<argument type="java.nio.IntBuffer" name="length"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glStencilFuncSeparate">
+		<argument type="int" name="face"/>
+		<argument type="int" name="func"/>
+		<argument type="int" name="ref"/>
+		<argument type="int" name="mask"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glStencilMaskSeparate">
+		<argument type="int" name="face"/>
+		<argument type="int" name="mask"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glStencilOpSeparate">
+		<argument type="int" name="face"/>
+		<argument type="int" name="sfail"/>
+		<argument type="int" name="dpfail"/>
+		<argument type="int" name="dppass"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniform1">
+		<argument type="int" name="location"/>
+		<argument type="java.nio.FloatBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniform1">
+		<argument type="int" name="location"/>
+		<argument type="java.nio.IntBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniform1f">
+		<argument type="int" name="location"/>
+		<argument type="float" name="v0"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniform1f">
+		<argument type="int" name="location"/>
+		<argument type="int" name="count"/>
+		<argument type="java.nio.ByteBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniform1i">
+		<argument type="int" name="location"/>
+		<argument type="int" name="v0"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniform1i">
+		<argument type="int" name="location"/>
+		<argument type="int" name="count"/>
+		<argument type="java.nio.ByteBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniform2">
+		<argument type="int" name="location"/>
+		<argument type="java.nio.FloatBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniform2">
+		<argument type="int" name="location"/>
+		<argument type="java.nio.IntBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniform2f">
+		<argument type="int" name="location"/>
+		<argument type="float" name="v0"/>
+		<argument type="float" name="v1"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniform2f">
+		<argument type="int" name="location"/>
+		<argument type="int" name="count"/>
+		<argument type="java.nio.ByteBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniform2i">
+		<argument type="int" name="location"/>
+		<argument type="int" name="count"/>
+		<argument type="java.nio.ByteBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniform2i">
+		<argument type="int" name="location"/>
+		<argument type="int" name="v0"/>
+		<argument type="int" name="v1"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniform3">
+		<argument type="int" name="location"/>
+		<argument type="java.nio.FloatBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniform3">
+		<argument type="int" name="location"/>
+		<argument type="java.nio.IntBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniform3f">
+		<argument type="int" name="location"/>
+		<argument type="float" name="v0"/>
+		<argument type="float" name="v1"/>
+		<argument type="float" name="v2"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniform3f">
+		<argument type="int" name="location"/>
+		<argument type="int" name="count"/>
+		<argument type="java.nio.ByteBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniform3i">
+		<argument type="int" name="location"/>
+		<argument type="int" name="count"/>
+		<argument type="java.nio.ByteBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniform3i">
+		<argument type="int" name="location"/>
+		<argument type="int" name="v0"/>
+		<argument type="int" name="v1"/>
+		<argument type="int" name="v2"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniform4">
+		<argument type="int" name="location"/>
+		<argument type="java.nio.FloatBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniform4">
+		<argument type="int" name="location"/>
+		<argument type="java.nio.IntBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniform4f">
+		<argument type="int" name="location"/>
+		<argument type="float" name="v0"/>
+		<argument type="float" name="v1"/>
+		<argument type="float" name="v2"/>
+		<argument type="float" name="v3"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniform4f">
+		<argument type="int" name="location"/>
+		<argument type="int" name="count"/>
+		<argument type="java.nio.ByteBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniform4i">
+		<argument type="int" name="location"/>
+		<argument type="int" name="count"/>
+		<argument type="java.nio.ByteBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniform4i">
+		<argument type="int" name="location"/>
+		<argument type="int" name="v0"/>
+		<argument type="int" name="v1"/>
+		<argument type="int" name="v2"/>
+		<argument type="int" name="v3"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniformMatrix2">
+		<argument type="int" name="location"/>
+		<argument type="boolean" name="transpose"/>
+		<argument type="java.nio.FloatBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniformMatrix2f">
+		<argument type="int" name="location"/>
+		<argument type="int" name="count"/>
+		<argument type="boolean" name="transpose"/>
+		<argument type="java.nio.ByteBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniformMatrix3">
+		<argument type="int" name="location"/>
+		<argument type="boolean" name="transpose"/>
+		<argument type="java.nio.FloatBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniformMatrix3f">
+		<argument type="int" name="location"/>
+		<argument type="int" name="count"/>
+		<argument type="boolean" name="transpose"/>
+		<argument type="java.nio.ByteBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniformMatrix4">
+		<argument type="int" name="location"/>
+		<argument type="boolean" name="transpose"/>
+		<argument type="java.nio.FloatBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniformMatrix4f">
+		<argument type="int" name="location"/>
+		<argument type="int" name="count"/>
+		<argument type="boolean" name="transpose"/>
+		<argument type="java.nio.ByteBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUseProgram">
+		<argument type="int" name="program"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glValidateProgram">
+		<argument type="int" name="program"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib1">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.DoubleBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib1">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.FloatBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib1">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ShortBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib1d">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ByteBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib1d">
+		<argument type="int" name="index"/>
+		<argument type="double" name="v0"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib1f">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ByteBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib1f">
+		<argument type="int" name="index"/>
+		<argument type="float" name="v0"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib1s">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ByteBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib1s">
+		<argument type="int" name="index"/>
+		<argument type="short" name="v0"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib2">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.DoubleBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib2">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.FloatBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib2">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ShortBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib2d">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ByteBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib2d">
+		<argument type="int" name="index"/>
+		<argument type="double" name="v0"/>
+		<argument type="double" name="v1"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib2f">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ByteBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib2f">
+		<argument type="int" name="index"/>
+		<argument type="float" name="v0"/>
+		<argument type="float" name="v1"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib2s">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ByteBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib2s">
+		<argument type="int" name="index"/>
+		<argument type="short" name="v0"/>
+		<argument type="short" name="v1"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib3">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.DoubleBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib3">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.FloatBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib3">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ShortBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib3d">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ByteBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib3d">
+		<argument type="int" name="index"/>
+		<argument type="double" name="v0"/>
+		<argument type="double" name="v1"/>
+		<argument type="double" name="v2"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib3f">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ByteBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib3f">
+		<argument type="int" name="index"/>
+		<argument type="float" name="v0"/>
+		<argument type="float" name="v1"/>
+		<argument type="float" name="v2"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib3s">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ByteBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib3s">
+		<argument type="int" name="index"/>
+		<argument type="short" name="v0"/>
+		<argument type="short" name="v1"/>
+		<argument type="short" name="v2"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib4">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.DoubleBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib4">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.FloatBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib4">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.IntBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib4">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ShortBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib4b">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ByteBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib4d">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ByteBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib4d">
+		<argument type="int" name="index"/>
+		<argument type="double" name="v0"/>
+		<argument type="double" name="v1"/>
+		<argument type="double" name="v2"/>
+		<argument type="double" name="v3"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib4f">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ByteBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib4f">
+		<argument type="int" name="index"/>
+		<argument type="float" name="v0"/>
+		<argument type="float" name="v1"/>
+		<argument type="float" name="v2"/>
+		<argument type="float" name="v3"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib4i">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ByteBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib4N">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.IntBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib4N">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ShortBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib4Nb">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ByteBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib4Ni">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ByteBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib4Ns">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ByteBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib4Nu">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.IntBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib4Nu">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ShortBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib4Nub">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ByteBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib4Nub">
+		<argument type="int" name="index"/>
+		<argument type="byte" name="x"/>
+		<argument type="byte" name="y"/>
+		<argument type="byte" name="z"/>
+		<argument type="byte" name="w"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib4Nui">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ByteBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib4Nus">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ByteBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib4s">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ByteBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib4s">
+		<argument type="int" name="index"/>
+		<argument type="short" name="v0"/>
+		<argument type="short" name="v1"/>
+		<argument type="short" name="v2"/>
+		<argument type="short" name="v3"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib4u">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.IntBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib4u">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ShortBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib4ub">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ByteBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib4ui">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ByteBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttrib4us">
+		<argument type="int" name="index"/>
+		<argument type="java.nio.ByteBuffer" name="v"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttribPointer">
+		<argument type="int" name="index"/>
+		<argument type="int" name="size"/>
+		<argument type="boolean" name="normalized"/>
+		<argument type="int" name="stride"/>
+		<argument type="java.nio.DoubleBuffer" name="pointer"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttribPointer">
+		<argument type="int" name="index"/>
+		<argument type="int" name="size"/>
+		<argument type="boolean" name="normalized"/>
+		<argument type="int" name="stride"/>
+		<argument type="java.nio.FloatBuffer" name="pointer"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttribPointer">
+		<argument type="int" name="index"/>
+		<argument type="int" name="size"/>
+		<argument type="boolean" name="normalized"/>
+		<argument type="int" name="stride"/>
+		<argument type="java.nio.IntBuffer" name="pointer"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttribPointer">
+		<argument type="int" name="index"/>
+		<argument type="int" name="size"/>
+		<argument type="boolean" name="normalized"/>
+		<argument type="int" name="stride"/>
+		<argument type="java.nio.ShortBuffer" name="pointer"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttribPointer">
+		<argument type="int" name="index"/>
+		<argument type="int" name="size"/>
+		<argument type="int" name="type"/>
+		<argument type="boolean" name="normalized"/>
+		<argument type="int" name="stride"/>
+		<argument type="java.nio.ByteBuffer" name="pointer"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glVertexAttribPointer">
+		<argument type="int" name="index"/>
+		<argument type="int" name="size"/>
+		<argument type="int" name="type"/>
+		<argument type="boolean" name="normalized"/>
+		<argument type="int" name="stride"/>
+		<argument type="long" name="pointerOffset"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniformMatrix2x3">
+		<argument type="int" name="location"/>
+		<argument type="boolean" name="transpose"/>
+		<argument type="java.nio.FloatBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniformMatrix2x3f">
+		<argument type="int" name="location"/>
+		<argument type="int" name="count"/>
+		<argument type="boolean" name="transpose"/>
+		<argument type="java.nio.ByteBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniformMatrix2x4">
+		<argument type="int" name="location"/>
+		<argument type="boolean" name="transpose"/>
+		<argument type="java.nio.FloatBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniformMatrix2x4f">
+		<argument type="int" name="location"/>
+		<argument type="int" name="count"/>
+		<argument type="boolean" name="transpose"/>
+		<argument type="java.nio.ByteBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniformMatrix3x2">
+		<argument type="int" name="location"/>
+		<argument type="boolean" name="transpose"/>
+		<argument type="java.nio.FloatBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniformMatrix3x2f">
+		<argument type="int" name="location"/>
+		<argument type="int" name="count"/>
+		<argument type="boolean" name="transpose"/>
+		<argument type="java.nio.ByteBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniformMatrix3x4">
+		<argument type="int" name="location"/>
+		<argument type="boolean" name="transpose"/>
+		<argument type="java.nio.FloatBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniformMatrix3x4f">
+		<argument type="int" name="location"/>
+		<argument type="int" name="count"/>
+		<argument type="boolean" name="transpose"/>
+		<argument type="java.nio.ByteBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniformMatrix4x2">
+		<argument type="int" name="location"/>
+		<argument type="boolean" name="transpose"/>
+		<argument type="java.nio.FloatBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniformMatrix4x2f">
+		<argument type="int" name="location"/>
+		<argument type="int" name="count"/>
+		<argument type="boolean" name="transpose"/>
+		<argument type="java.nio.ByteBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniformMatrix4x3">
+		<argument type="int" name="location"/>
+		<argument type="boolean" name="transpose"/>
+		<argument type="java.nio.FloatBuffer" name="value"/>
+	</method>
+	<method visibility="public" static="false" final="false" name="glUniformMatrix4x3f">
+		<argument type="int" name="location"/>
+		<argument type="int" name="count"/>
+		<argument type="boolean" name="transpose"/>
+		<argument type="java.nio.ByteBuffer" name="value"/>
+	</method>
+</interface>
